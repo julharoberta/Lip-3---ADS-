@@ -1,0 +1,91 @@
+Primeiro exemplo de laço de repetição While:
+
+#Meu primeiro código com while
+condicao = 1
+while condicao > 0:
+  condicao = int(input("Digite um número"))
+  print("O número", condicao,"foi digitado")
+print("Fim do ciclo while")
+
+----------------------------------------------------------------------------------------------
+
+Segundo exemplo de While, crie um código que repita a operação de soma enquanto o número ímpar, o programa deve ser finalizado.
+
+#Meu segundo código com while
+valor = 0
+soma = 0
+while valor % 2 == 0:
+  valor = int(input("Digite um número a ser somado: "))
+  soma = soma + valor
+  print("O valor de soma é", soma)
+print("O valor final da soma é", soma)
+
+-----------------------------------------------------------------------------------------------
+
+Crie um código que calcule a tabuada do valor digitadp pelo usuário. Caso o valor digitado seja negatico, o programa não deve executar a rotina.
+
+# Maneira 1 sem while
+
+valor = int(input("Digite um valor: "))
+
+multiplicador  = valor * 0
+multiplicador = print("O valor de", valor, "x 0 = ", multiplicador)
+multiplicador  = valor * 1
+multiplicador = print("O valor de", valor, "x 0 = ", multiplicador)
+multiplicador  = valor * 2
+multiplicador = print("O valor de", valor, "x 0 = ", multiplicador)
+multiplicador  = valor * 3
+multiplicador = print("O valor de", valor, "x 0 = ", multiplicador)
+multiplicador  = valor * 4
+multiplicador = print("O valor de", valor, "x 0 = ", multiplicador)
+multiplicador  = valor * 5
+
+
+# Maneira 2 com while
+
+valor = int(input("Digite um valor: "))
+acumulador = 0
+while valor >=0 and acumulador <= 9:                           #Se eu quiser aumantar a quantidade de multiplicadores eu só mudo o que for "<="
+  resultado = valor * acumulador
+  print(valor, " x ", acumulador, " = ", resultado)
+  acumulador = acumulador + 1
+print("Fim de código")
+
+------------------------------------------------------------------------------------
+Crie um código que imprima o valor quando o cúbibo de um código de um número digitado.
+
+valor = int(input("Digite um valor: "))
+acumulador = 0
+resultado = 1
+while acumulador < 3:
+  resultado = resultado * valor
+  acumulador = acumulador + 1
+  print("O valor", valor, "elevado a", acumulador, "é igual a", resultado)
+
+----------------------------------------------------------------------------------
+
+Cração de uma laço de repetição infinito.
+
+acumulador = 0
+while True:
+ valor1 = int(input("Digite um valor  :"))
+ valor2 = int(input("Digite o segundo valor: "))
+ resultado = valor1 ** valor2
+ print(resultado)
+
+----------------------------------------------------------------------------------
+
+Calcule o fatorial de um número digitado pelo usuário.
+
+valor = int(input("Digite um valor: ")
+fatorial = 1
+contador = 1
+            
+while contador <= numero:
+      fatorial = fatorial * contador            
+      contador += 1
+print(f"O fatorial de {numero} é {fatorial}.")
+
+
+----------------------------------------------------------------------------------------------
+
